@@ -11,7 +11,7 @@ if has_julia
   lib_bladejl = library(
     'bladejl',
     files('bindings.cc'),
-    include_directories: inc_lst,
+    include_directories: inc_lst + '@0@/include/julia'.format(get_option('prefix')),
     dependencies: dep_lst,
     install: true,
   )
