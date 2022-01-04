@@ -49,6 +49,7 @@ lib_blade_dep = declare_dependency(
 )
 
 subdir('python')
+subdir('julia')
 subdir('tests')
 subdir('docs')
 
